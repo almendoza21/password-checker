@@ -20,3 +20,10 @@ def check_password_strength(password):
 
 password = input("Enter a password to check: ")
 print("Strength:", check_password_strength(password))
+
+while True:
+    password = input ("Enter a password to check (or type 'exit' to quit): ")
+    if password.lower() == 'exit':
+        print("Goodbye!")
+        break
+    print("Strength:", check_password_strength(password))
